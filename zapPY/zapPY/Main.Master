@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="zapPY.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+      em {
+        color: red;
+        font-style: normal;
+      }
+      img {
+        width: 100px;
+        border-radius: 50px;
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+</head>
+<body>
+    <table class="table table-stripped table-dark"> 
+        <tr>
+            <td>
+                <img src="https://otsukai.com/public/item/41345/5f3e27993c0ce.png?operation=resize&w=960" />
+                <h1 class="display-1">One Piece does exists.</h1>
+                <a href="Default.aspx">Main Page</a>
+                <a href="DescriptionProducts.aspx">Our Products</a>
+                <a href="FAQ.aspx">FAQ</a>
+               
+
+            </td>
+        </tr>
+    </table>
+    <%-- <form id="form1" runat="server"> --%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <%-- </form> --%>
+</body>
+</html>
